@@ -1,0 +1,20 @@
+orders:([]
+    updateTime:`timestamp$();
+    date:`date$();
+    orderID:`symbol$();
+    sym:`symbol$();
+    side:`symbol$();
+    price:`float$();
+    size:`long$()
+ )
+
+trades:([]
+    updateTime:`timestamp$();
+    date:`date$();
+    tradeID:`symbol$();
+    orderID:`symbol$();
+    sym:`symbol$();
+    side:`symbol$();
+    price:`float$();
+    size:`long$()
+ )
