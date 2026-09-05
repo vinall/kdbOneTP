@@ -5,10 +5,13 @@
 cmdline:.Q.opt[.z.X]
 
 
-PubTo:first "S"$cmdline `pubTo;
+/PubTo:"S"$first cmdline `pubTo;
+PubTo:(`localhost:5000)^"S"$first cmdline`pubTo;
 show PubTo
-Limit:first "I"$cmdline `limit
+/Limit:first "I"$first cmdline `limit;
+Limit:(5000)^"J"$first cmdline`limit;
 show Limit
-getTablesToData:"S"$"," vs first cmdline `getTables
+/getTablesToData1:"S"$"," vs first cmdline `getTables
+getTablesToData:$[(`$first "," vs first cmdline `getTables )~ `; tables[] ; `$"," vs first cmdline `getTables ]
 show getTablesToData
 
