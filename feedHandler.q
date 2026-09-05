@@ -1,4 +1,5 @@
 / feedhandler.q
+//Users/shreyaverma/.kx/bin/q feedhandler.q -genTables trades -limit 30 -pubTo localhost:5001
 
 / --- PHASE 1: CONFIGURATION & COMMAND-LINE PARSING ---
 config:.Q.opt .z.x;
